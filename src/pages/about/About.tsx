@@ -1,5 +1,11 @@
+import Container from "@/components/Container";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <Container>
+      <div>About</div>
+    </Container>
+  );
 };
 
 export default About;

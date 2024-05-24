@@ -1,13 +1,8 @@
 import "./App.css";
-import { Button } from "./components/ui/button";
+import MainLayout from "./components/ui/layouts/MainLayout";
 
 function App() {
-  return (
-    <>
-      <h1 className="text-red-500 text-3xl">Hello</h1>
-      <Button>click</Button>
-    </>
-  );
+  return <MainLayout />;
 }
 
 export default App;
