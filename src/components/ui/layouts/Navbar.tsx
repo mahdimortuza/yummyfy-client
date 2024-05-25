@@ -83,16 +83,13 @@ const Navbar = () => {
           {/* Mobile Navigation Items */}
           {/*  */}
           <li className="px-2 py-1 border-b rounded-sm hover:bg-red-500 duration-300 hover:text-white cursor-pointer border-gray-600">
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="px-2 py-1 border-b rounded-sm hover:bg-red-500 duration-300 hover:text-white cursor-pointer border-gray-600">
-            <Link to="/products">Shop</Link>
+            <NavLink to="/recipes">Recipes</NavLink>
           </li>
           <li className="px-2 py-1 border-b rounded-sm hover:bg-red-500 duration-300 hover:text-white cursor-pointer border-gray-600">
-            <Link to="/flash-sale">Flash Sale</Link>
-          </li>
-          <li className="px-2 py-1 border-b rounded-sm hover:bg-red-500 duration-300 hover:text-white cursor-pointer border-gray-600">
-            <Link to="/dashboard">Dashboard</Link>
+            <NavLink to="/login">Google Login</NavLink>
           </li>
         </ul>
       </div>
