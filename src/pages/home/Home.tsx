@@ -1,4 +1,5 @@
 import BannerSection from "./bannerSection/BannerSection";
+import DevInfoSection from "./devInfoSection/DevInfoSection";
 import SuccessStoriesSection from "./successStoriesSection/SuccessStoriesSection";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <BannerSection />
       <SuccessStoriesSection />
+      <DevInfoSection />
     </>
   );
 };

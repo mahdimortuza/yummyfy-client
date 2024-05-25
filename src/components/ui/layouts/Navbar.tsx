@@ -12,7 +12,7 @@ const Navbar = () => {
 
   // const handleLogout = () => {};
   return (
-    <header className="h-14 py-12 bg-backdrop-blur-lg bg-black/50 fixed top-0 z-50 w-full text-white">
+    <header className="h-14 py-12 bg-backdrop-blur-lg bg-black/50 backdrop-blur-md fixed top-0 z-50 w-full text-white">
       <div className=" h-full w-full max-w-[1300px]  px-5 mx-auto flex justify-between items-center ">
         {/* Logo */}
         <Link to="/">YummyFy</Link>

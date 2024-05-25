@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { CookingPot, HandPlatter, HeartHandshake, Users } from "lucide-react";
-
+import CountUp from "react-countup";
 const SuccessStoriesSection = () => {
   const iconStyle = "mx-auto size-[50px]";
   const features = [
@@ -22,6 +22,28 @@ const SuccessStoriesSection = () => {
       text: "Get Inspired",
     },
   ];
+
+  const numberStyle = "text-3xl font-bold";
+  const textStyle = "text-3xl font-semibold mt-2";
+
+  const counters = [
+    {
+      id: 1,
+      number: <CountUp className={`${numberStyle}`} end={400} />,
+      text: <p className={`${textStyle}`}>Total Recipes</p>,
+    },
+    {
+      id: 2,
+      number: <CountUp className={`${numberStyle}`} end={1200} />,
+      text: <p className={`${textStyle}`}>Active Users</p>,
+    },
+    {
+      id: 3,
+      number: <CountUp className={`${numberStyle}`} end={2000} />,
+      text: <p className={`${textStyle}`}>Total Users</p>,
+    },
+  ];
+
   return (
     <Container className="my-10">
       <SectionHeader className="w-[200px]" />
@@ -38,7 +60,14 @@ const SuccessStoriesSection = () => {
           </div>
         ))}
       </div>
-      <div></div>
+      <div className="mt-36 grid md:grid-cols-2 lg:grid-cols-3">
+        {counters.map((item) => (
+          <div key={item.id} className="text-center">
+            {item.number}
+            {item.text}
+          </div>
+        ))}
+      </div>
     </Container>
   );
 };
