@@ -1,8 +1,15 @@
 import { ReactNode } from "react";
 
-const Container = ({ children }: { children: ReactNode }) => {
+type TContainerProps = {
+  children: ReactNode;
+  className?: string;
+};
+
+const Container = ({ children, className }: TContainerProps) => {
   return (
-    <div className="w-full max-w-[1220px] px-[20px] mx-auto">{children}</div>
+    <div className={`w-full max-w-[1220px] px-[20px] mx-auto ${className}`}>
+      {children}
+    </div>
   );
 };
 
