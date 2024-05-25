@@ -1,10 +1,10 @@
-import Container from "@/components/Container";
+import BannerSection from "./bannerSection/BannerSection";
 
 const Home = () => {
   return (
-    <Container>
-      <div>Home</div>
-    </Container>
+    <>
+      <BannerSection />
+    </>
   );
 };
 

@@ -12,8 +12,8 @@ const Navbar = () => {
 
   // const handleLogout = () => {};
   return (
-    <header className="h-14 py-16">
-      <div className=" h-full w-full max-w-[1300px] px-5 mx-auto flex justify-between items-center sticky top-0">
+    <header className="h-14 py-12 bg-backdrop-blur-lg bg-black/50 fixed top-0 z-50 w-full text-white">
+      <div className=" h-full w-full max-w-[1300px]  px-5 mx-auto flex justify-between items-center ">
         {/* Logo */}
         <Link to="/">YummyFy</Link>
 
@@ -22,7 +22,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               cn(
-                "font-roboto text-[18px] text-black font-medium leading-[150%] px-3 py-1 rounded",
+                "font-roboto text-[18px] text-white font-medium leading-[150%] px-3 py-1 rounded",
                 {
                   " bg-tangerine text-red-500 border-red-500 border-b-2":
                     isActive,
@@ -37,7 +37,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               cn(
-                "font-roboto text-[18px] text-black font-medium leading-[150%] px-3 py-1 rounded",
+                "font-roboto text-[18px] text-white font-medium leading-[150%] px-3 py-1 rounded",
                 {
                   " bg-tangerine text-red-500 border-red-500 border-b-2":
                     isActive,
@@ -49,20 +49,7 @@ const Navbar = () => {
             Recipes
           </NavLink>
 
-          <NavLink
-            className={({ isActive }) =>
-              cn(
-                "font-roboto text-[18px] text-black font-medium leading-[150%] px-3 py-1 rounded",
-                {
-                  " bg-tangerine text-red-500 border-red-500 border-b-2":
-                    isActive,
-                }
-              )
-            }
-            to="/login"
-          >
-            Google Login
-          </NavLink>
+          <button>Google Login</button>
         </ul>
 
         {/* Mobile Navigation Icon */}
@@ -89,7 +76,7 @@ const Navbar = () => {
             <NavLink to="/recipes">Recipes</NavLink>
           </li>
           <li className="px-2 py-1 border-b rounded-sm hover:bg-red-500 duration-300 hover:text-white cursor-pointer border-gray-600">
-            <NavLink to="/login">Google Login</NavLink>
+            <button>Google Login</button>
           </li>
         </ul>
       </div>
