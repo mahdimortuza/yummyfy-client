@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const BannerSection = () => {
   return (
-    <div className="relative h-screen w-screen overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={bgVideo}
