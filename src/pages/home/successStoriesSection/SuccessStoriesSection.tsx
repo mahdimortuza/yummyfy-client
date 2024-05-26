@@ -45,8 +45,8 @@ const SuccessStoriesSection = () => {
   ];
 
   return (
-    <Container className="my-10">
-      <SectionHeader className="w-[200px]" />
+    <Container className="my-28">
+      <SectionHeader className="w-[200px]" text="Why us" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-14 mt-10">
         {features.map((item) => (
           <div

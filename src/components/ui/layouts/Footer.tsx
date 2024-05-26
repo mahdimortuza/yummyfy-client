@@ -1,71 +1,34 @@
-import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <footer className="h-full w-full max-w-[1300px] px-[15px] mx-auto py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 place-content-center gap-[30px] lg:gap-[120px]">
-        {/* col-1  */}
-        <div>
-          <span className="text-red-500">YummyFy</span>
-          <p className="text-gray font-inter mt-5 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-            libero viverra dapibus odio sit malesuada in quis. Arcu tristique
-            elementum viverra integer id.
-          </p>
-          <div className="flex gap-4 mt-11">
-            <a href="/">FaFacebook</a>
-            <a href="/">FaTwitter</a>
-            <a href="/">FaInstagram</a>{" "}
-          </div>
-        </div>
+      <ul className="flex item-center justify-center gap-16 ">
+        <li>
+          <a href="https://www.linkedin.com/in/mahdi-mortuza">
+            <FaLinkedinIn className="w-6 h-5 text-[#222A35]" />
+          </a>
+        </li>
 
-        {/* col-2  */}
-        <div>
-          <h3 className="text-2xl font-bold">Opening Restaurant</h3>
-          <p className="text-gray font-inter mt-11 text-base">
-            Sat-Wet: 09:00am-10:00PM
-          </p>
-          <p className="text-gray font-inter mt-1 text-base">
-            {" "}
-            Thursdayt: 09:00am-11:00PM{" "}
-          </p>
-          <p className="text-gray font-inter mt-1 text-base">
-            Friday: 09:00am-8:00PM
-          </p>
-        </div>
+        <li>
+          <a href="https://github.com/mahdimortuza">
+            <FaGithub className="w-6 h-5 text-[#222A35]" />
+          </a>
+        </li>
 
-        {/* col-3  */}
-        <ul className="flex flex-col">
-          <h3 className="text-2xl font-bold"> User Link</h3>
-          <Link to="/" className="text-gray font-inter mt-11 text-base">
-            About Us
-          </Link>
-          <Link to="/" className="text-gray font-inter mt-1 text-base">
-            Contact Us
-          </Link>
-          <Link to="/" className="text-gray font-inter mt-1 text-base">
-            Order Delivery
-          </Link>
-          <Link to="/" className="text-gray font-inter mt-1 text-base">
-            Payment & Tex
-          </Link>
-          <Link to="/" className="text-gray font-inter mt-1 text-base">
-            Terms of Services
-          </Link>
-        </ul>
-
-        {/* col-4  */}
-        <div>
-          <h3 className="text-2xl font-bold">Contact Us </h3>
-          <p className="text-gray font-inter mt-11 text-base">
-            1234 Country Club Ave
-          </p>
-          <p className="text-gray font-inter mt-1 text-base">
-            NC 123456, London, UK
-          </p>
-          <p className="text-gray font-inter mt-1 text-base">+0123 456 7891</p>
-        </div>
-      </div>
+        <li>
+          <a href="https://twitter.com/mahdi_mortuza">
+            <RiTwitterXLine className="w-6 h-5 text-[#222A35]" />
+          </a>
+        </li>
+      </ul>
+      <h1 className=" mt-[35px] font-raleway text-[15px] font-[400] text-center text-[#5C606C]">
+        &copy; Copyright Mahdi Mortuza, {year}
+      </h1>
     </footer>
   );
 };
